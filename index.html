@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Respostas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form id="form">
+        <label for="text">Nome:</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="select">Sexo:</label>
+        <select id="select" name="select">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Nao definido">Não definido</option>
+        </select><br><br>
+
+        <label>Estado Civil:</label>
+        <input type="radio" id="radio1" name="radio" value="Casado(a)">
+        <label for="radio1">Casado(a)</label>
+        <input type="radio" id="radio2" name="radio" value="Solteiro(a)">
+        <label for="radio2">Solteiro(a)</label><br><br>
+
+        <label>Nível de Escolaridade:</label><br>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="Ensino fundamental completo">
+        <label for="checkbox1">Ensino fundamental completo</label><br>
+        <input type="checkbox" id="checkbox2" name="checkbox" value="Ensino médio completo">
+        <label for="checkbox2">Ensino médio completo</label><br>
+        <input type="checkbox" id="checkbox3" name="checkbox" value="Ensino superior completo">
+        <label for="checkbox3">Ensino superior completo</label><br><br>
+
+        <button type="submit">Enviar</button>
+        <div id="loading">Carregando...</div>
+    </form>
+
+    <h2>Respostas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Estado Civil</th>
+                <th>Nível de Escolaridade</th>
+            </tr>
+        </thead>
+        <tbody id="responses">
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
